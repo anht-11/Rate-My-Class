@@ -46,7 +46,7 @@ function updatePostsTime(time_data) {
 
 function initWS() {
     // Establish a WebSocket connection with the server
-    socket = io.connect(`http://${domain}:${port}`, {transports: ['websocket']});
+    socket = io.connect(`https://${domain}:${port}`, {transports: ['websocket']});
     socket.on('connect', (message) => {
         setInterval(getTime,1000)
         console.log('WebSocket connection established');
