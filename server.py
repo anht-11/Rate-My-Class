@@ -28,7 +28,7 @@ posts = db["posts"]
 users = db["users"]
 
 URL = 'ratemyclass.tech' #Change when we are deployed to real domain name
-PROTOCOL = 'https'      #Also change protocol to https
+PROTOCOL = 'http'      #Also change protocol to https
 
 # Dictionary to store request count and timestamp for each IP
 ip_request_count = {}
